@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(white, black);
+}
+
+.floor {
+    align-self: flex-end;
+    justify-content: center;
+}
+
+.neon-title {
+    align-self: flex-start;
+    justify-content: center;
+}
