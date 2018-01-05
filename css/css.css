@@ -1,13 +1,20 @@
-body {
-    background: linear-gradient(white, black);
+html, body {
+    height: 100%
 }
 
-.floor {
-    align-self: flex-end;
-    justify-content: center;
+body {
+    background: linear-gradient(white, black);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .neon-title {
-    align-self: flex-start;
-    justify-content: center;
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+.floor {
+    flex-shrink: 0;
+    padding: 20px;
 }
