@@ -1,20 +1,9 @@
-html, body {
-    height: 100%
-}
-
 body {
-    background: linear-gradient(white, black);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    background-color: black;
 }
 
 .neon-title {
-    flex: 1 0 auto;
-    padding: 20px;
-}
-
-.floor {
-    flex-shrink: 0;
-    padding: 20px;
+    display: flex;
+    color: rgb(216,195,0);
+    justify-content: center;
 }
