@@ -7,3 +7,24 @@ body {
     color: rgb(216,195,0);
     justify-content: center;
 }
+
+#le-dragon {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.dragon {
+    animation-name: fade;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
