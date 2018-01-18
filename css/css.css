@@ -64,3 +64,30 @@ body {
             left: 600%;
         }
     }
+
+.outer-kirby {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+    .kirby-hang {
+        overflow: hidden;
+        position: relative;
+        width: 130px;
+        height: 130px;
+        transform: rotate(180deg);
+        transform: scaleY(-1);
+        bottom: 130px;
+        animation-name: hang;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes hang {
+        from {
+            bottom: 130px;
+        }
+        to {
+            bottom: 35px;
+        }
+    }
