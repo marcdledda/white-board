@@ -71,6 +71,7 @@ body {
     justify-content: center;
 }
     .kirby-hang {
+        z-index: -1;
         overflow: hidden;
         position: relative;
         width: 130px;
