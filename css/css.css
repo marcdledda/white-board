@@ -13,18 +13,49 @@ body {
     justify-content: center;
     opacity: 0;
 }
+    .dragon {
+        animation-name: fade;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
 
-.dragon {
-    animation-name: fade;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+.clue {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
 }
+    .clue:hover {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+    }
 
-@keyframes fade {
+.mega-run {
+    overflow: hidden;
+    position: relative;
+    left: -20%;
+    animation-name: run;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes run {
     from {
-        opacity: 0;
+        left: -20%
     }
     to {
-        opacity: 1;
+        left: 100%;
     }
 }
