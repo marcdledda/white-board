@@ -42,20 +42,25 @@ body {
         text-decoration: none;
     }
 
-.mega-run {
+.run-outer {
     overflow: hidden;
-    position: relative;
-    left: -20%;
-    animation-name: run;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: flex-start;
 }
-@keyframes run {
-    from {
-        left: -20%
+    .mega-run {
+        overflow: hidden;
+        position: relative;
+        left: -90%;
+        animation-name: run;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
-    to {
-        left: 100%;
+    @keyframes run {
+        from {
+            left: -90%;
+        }
+        to {
+            left: 600%;
+        }
     }
-}
