@@ -42,6 +42,8 @@ body {
         text-decoration: none;
     }
 
+
+/* PAGE 2 */
 .run-outer {
     overflow: hidden;
     display: flex;
@@ -90,5 +92,33 @@ body {
         }
         to {
             bottom: 35px;
+        }
+    }
+
+.outer-mario {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    position: absolute;
+    width: 99%;
+    bottom: 55%;
+}
+    .mario-walk {
+        position: relative;
+        left: -90%;
+        width: 200px;
+        height: 200px;
+        animation-name: mario-run;
+        animation-duration: 3.9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes mario-run {
+        from {
+            left: -90%;
+        }
+        to {
+            left: 100%;
         }
     }
